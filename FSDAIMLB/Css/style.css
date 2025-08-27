@@ -1,0 +1,35 @@
+/*body{
+    background-color: red;
+}*/
+/* p{
+    background-color: aqua;
+    color: black;
+}*/
+/* .para1{
+    background-color: red;
+    color:black;
+}  */
+  div~p{
+    background-color: aquamarine;
+  }
+  p:hover{
+    background-color: bisque;
+    font-size: xx-large;
+  }
+  p::before{
+    content:"Hello"
+  }
+  p::after{
+    background-color: blue;
+    content:" bye"
+    
+  }
+  p::selection{
+    background-color: brown;
+  }
+  p:nth-child(2){
+    background-color: bisque;
+  } 
+  div p:nth-of-type(1){
+    background-color: blueviolet;
+  }
