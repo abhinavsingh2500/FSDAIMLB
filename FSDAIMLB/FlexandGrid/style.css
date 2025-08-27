@@ -1,0 +1,29 @@
+.container{
+  display:flex; 
+  border:1px solid red; 
+  background-color: cadetblue;
+  flex-direction: column;
+  
+}
+.child1{
+  display:flex; 
+  border:1px  dotted solid rgb(97, 224, 23); 
+  background-color: rgb(170, 211, 20);
+
+}
+.child2{
+  display:flex; 
+  border:1px  dotted solid rgb(13, 82, 99); 
+  background-color: rgb(33, 20, 211);
+}
+.child3{
+  display:flex; 
+  border:1px  dotted solid rgb(187, 12, 134); 
+  background-color: rgb(211, 20, 170);
+}
+.child4{
+  display:flex; 
+  border:1px  dotted solid rgb(226, 217, 83); 
+  background-color: rgb(208, 211, 20);
+}
+
