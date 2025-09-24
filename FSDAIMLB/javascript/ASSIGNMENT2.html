@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+            border:2px solid blue;
+            text-align:center;
+        }
+        .logo{
+            height: 50px;
+            width: 50px;
+            border:2px solid red;
+            border-radius: 100%;
+            float:left;
+            margin:5px;
+        }
+        #countDisplay {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="container">
+        <h2>Counting App</h2>
+        <div id="countDisplay">0</div>
+        <div id="Button">
+            <button onclick="addition()">+</button>
+            <button onclick="substraction()">-</button>
+        </div>
+    </div>
+    <script>
+        let count = 0;
+        function updateDisplay() {
+            document.getElementById("countDisplay").textContent = count;
+        }
+        function addition() {
+            if (count < 10) {
+                count++;
+                updateDisplay();
+            } else {
+                alert("Maximum limit is 10");
+            }
+        }
+        function substraction() {
+            if (count > 0) {
+                count--;
+                updateDisplay();
+            } else {
+                alert("Minimum limit is 0");
+            }
+        }
+    </script>
+</body>
+</html>
